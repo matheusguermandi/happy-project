@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
 
-import { Container, Content } from './styles';
-
 import logoImg from '../../assets/logo.svg';
+import { Container, Content } from './styles';
 
 const Landing: React.FC = () => {
   return (
@@ -21,9 +21,9 @@ const Landing: React.FC = () => {
           <span>São Paulo</span>
         </div>
 
-        <a href="home">
+        <Link to="home">
           <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />
-        </a>
+        </Link>
       </Content>
     </Container>
   );
