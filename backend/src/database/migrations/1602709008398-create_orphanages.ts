@@ -48,16 +48,6 @@ export default class createOrphanages1602709008398
             type: 'boolean',
             default: false,
           },
-          {
-            name: 'created_at',
-            type: 'timestamp',
-            default: 'now()',
-          },
-          {
-            name: 'updated_at',
-            type: 'timestamp',
-            default: 'now()',
-          },
         ],
       }),
     );
