@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom';
 import { FiArrowRight, FiPlus } from 'react-icons/fi';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 
-import 'leaflet/dist/leaflet.css';
 import localMarkerImg from '../../assets/local-marker.svg';
 import { happyMapIcon } from '../../utils/mapIcon';
-import api from '../../service/api';
+import api from '../../services/api';
 
 import { Container } from './styles';
 
@@ -44,7 +43,7 @@ const Orphanages: React.FC = () => {
 
       <Map
         center={[-22.3183981, -49.085973]}
-        zoom={13}
+        zoom={15}
         style={{ width: '100%', height: '100%' }}
       >
         <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" />
@@ -70,7 +69,6 @@ const Orphanages: React.FC = () => {
             </Marker>
           );
         })}
-
       </Map>
 
       <Link to="/">
