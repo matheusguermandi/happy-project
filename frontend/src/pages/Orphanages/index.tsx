@@ -42,7 +42,7 @@ const Orphanages: React.FC = () => {
       </aside>
 
       <Map
-        center={[-22.3183981, -49.085973]}
+        center={[-22.3002607, -49.074626]}
         zoom={15}
         style={{ width: '100%', height: '100%' }}
       >

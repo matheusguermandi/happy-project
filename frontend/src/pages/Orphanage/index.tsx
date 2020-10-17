@@ -4,7 +4,7 @@ import { FiClock, FiInfo } from 'react-icons/fi';
 import { Map, Marker, TileLayer } from 'react-leaflet';
 import { useParams } from 'react-router-dom';
 
-// import Sidebar from '../../components/Sidebar';
+import Sidebar from '../../components/Sidebar';
 import { happyMapIcon } from '../../utils/mapIcon';
 import api from '../../services/api';
 
@@ -43,7 +43,7 @@ const Orphanage: React.FC = () => {
 
   return (
     <Container>
-      {/* <Sidebar /> */}
+      <Sidebar />
 
       <main>
         <OrphanageDetail>
@@ -121,8 +121,8 @@ const Orphanage: React.FC = () => {
                   fim de semana
                 </div>
               ) : (
-                <div className="open-on-weekends">
-                  <FiInfo size={32} color="#39CC83" />
+                <div className="open-on-weekends dont-open">
+                  <FiInfo size={32} color="#FF669D" />
                   Não atendemos <br />
                   fim de semana
                 </div>
