@@ -36,7 +36,7 @@ const Orphanages: React.FC = () => {
         </header>
 
         <footer>
-          <strong>Rio Claro</strong>
+          <strong>Bauru</strong>
           <span>São Paulo</span>
         </footer>
       </aside>
@@ -71,7 +71,7 @@ const Orphanages: React.FC = () => {
         })}
       </Map>
 
-      <Link to="/">
+      <Link to="/orphanages/create">
         <FiPlus size={32} color="#fff" />
       </Link>
     </Container>
