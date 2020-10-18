@@ -6,6 +6,7 @@ import OrphanagesMap from "./screens/OrphanagesMap";
 import OrphanageDetails from "./screens/OrphanageDetails";
 import SelectMapPosition from "./screens/CreateOrphanage/SelectMapPosition";
 import OrphanageData from "./screens/CreateOrphanage/OrphanageData";
+import Header from './components/Header';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -21,16 +22,28 @@ const Routes: React.FC = () => {
         <Screen
           name="OrphanageDetails"
           component={OrphanageDetails}
+          options={{
+            headerShown: true,
+            header: () => <Header showCancel={false} title="Orfanato" />
+          }}
         />
 
         <Screen
           name="SelectMapPosition"
           component={SelectMapPosition}
+          options={{
+            headerShown: true,
+            header: () => <Header title="Selecione no mapa" />
+          }}
         />
 
         <Screen
           name="OrphanageData"
           component={OrphanageData}
+          options={{
+            headerShown: true,
+            header: () => <Header title="Informe os dados" />
+          }}
         />
       </Navigator>
     </NavigationContainer>
